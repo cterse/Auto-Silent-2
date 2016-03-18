@@ -5,20 +5,29 @@
     android:layout_height="match_parent"
     tools:context="com.mcc.vidyalankar.auto_silent.MainActivity">
 
+    <Button
+        android:id="@+id/start_service_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_service_button"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Service Stopped"
+        android:text="@string/stopped_service"
+        android:textIsSelectable="false"
+        android:textSize="30dp"
+        android:layout_above="@id/start_service_button"
         android:layout_centerHorizontal="true"
-        android:layout_alignTop="@id/StartServiceButton"
-        />
+        android:layout_marginBottom="92dp"
+        android:id="@+id/textView" />
 
-    <Button
-        android:id="@+id/StartServiceButton"
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Start Service"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"/>
+        />
+
 
 </RelativeLayout>
