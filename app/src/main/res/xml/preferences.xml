@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:key="pref_notification"
+        android:title="Notifications"
+        android:summary="Turn Notifications On/Off"
+        android:defaultValue="true"/>
+
+    <CheckBoxPreference
+        android:key="pref_logs"
+        android:title="Save Logs"
+        android:summary="Save Logs for future reference"
+        android:defaultValue="true"/>
+
+    <CheckBoxPreference
+        android:key="pref_college_wifi"
+        android:title="Auto Detect College WiFi"
+        android:summary="Automatically chagne mode when connected to college wifi"
+        android:defaultValue="false"/>
+
+    <CheckBoxPreference
+        android:key="pref_report"
+        android:title="Send Crash Reports"
+        android:defaultValue="true"/>
+
+    <Preference
+        android:title="Version"
+        android:summary="Alpha 1.0.0"/>
+
+    <Preference
+        android:title="Developed By"
+        android:summary="Chinmay, Rahul and Pratik"/>
+
+</PreferenceScreen>
