@@ -3,4 +3,5 @@
     <string name="running_service">Service Running</string>
     <string name="stopped_service">Service Stopped</string>
     <string name="start_service_button">Start Service</string>
+    <string name="stop_Service_button">Stop Service</string>
 </resources>
