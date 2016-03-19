@@ -14,6 +14,7 @@
         android:layout_centerHorizontal="true" />
 
     <TextView
+        android:id="@+id/service_status_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/stopped_service"
@@ -21,23 +22,25 @@
         android:textSize="30dp"
         android:layout_above="@id/start_service_button"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="30dp"
-        android:id="@+id/textView" />
+        android:layout_marginBottom="30dp" />
 
     <ImageView
         android:id="@+id/settings_arrow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/arrow_right"
-        android:layout_alignParentRight="true" />
+        android:layout_alignParentRight="true"
+        android:onClick="openSettings"/>
 
     <ImageView
+        android:id="@+id/settings_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toLeftOf="@id/settings_arrow"
         android:layout_alignParentTop="true"
         android:src="@drawable/settings"
-        android:layout_marginRight="-20dp"/>
+        android:layout_marginRight="-20dp"
+        android:onClick="openSettings"/>
 
     <ImageView
         android:id="@+id/logs_arrow"
@@ -46,14 +49,17 @@
         android:src="@drawable/arrow_down"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="50dp"
+        android:onClick="openLogs"/>
 
     <TextView
+        android:id="@+id/logs_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Logs"
         android:textSize="20dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="42dp" />
+        android:layout_marginBottom="42dp"
+        android:onClick="openLogs"/>
 </RelativeLayout>
